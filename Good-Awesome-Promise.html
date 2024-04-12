@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript async / await</h1>
+<h2 id="demo"></h2>
+
+<p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
+
+<script>
+
+function myPromiseFunction(ele) {
+	return new Promise(function(resolve) {
+    setTimeout(function() {resolve(ele);}, 3000);
+  });
+}
+
+const stringArray = ["I love You !!", "I love You Again!!", "I love You And Again !!"];
+
+async function myDisplay() {
+	for (let goodMsg of stringArray) {
+    	let myPromise = myPromiseFunction(goodMsg);
+  		document.getElementById("demo").innerHTML = await myPromise;
+    }
+}
+
+myDisplay();
+</script>
+
+</body>
+</html>
