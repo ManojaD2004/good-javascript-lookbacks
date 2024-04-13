@@ -3,3 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/brainautotech/myApp
     - /bin/cp good-awesome-JSpromise.html $DEPLOYPATH
+    - /bin/cp test.txt $DEPLOYPATH
