@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/brainautotech/repositories/good-javascript-lookbacks
+    - /bin/cp good-awesome-JSpromise.html $DEPLOYPATH
